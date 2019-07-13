@@ -1,0 +1,28 @@
+<h1>item register form</h1>
+<%= form_with model: @item, local: true do |form| %>
+<p>
+  item name: <br>
+  <%= form.text_field :name %>
+</p>
+<p>
+  item description: <br>
+  <%= form.text_area :description %>
+</p>
+<p>
+  price: <br>
+  <%= form.text_field :price %>
+</p>
+<p>
+  seller: <br>
+  <%= form.text_field :seller %>
+</p>
+<p>
+  email: <br>
+  <%= form.text_field :email %>
+</p>
+<p>
+  url: <br>
+  <%= form.text_area :image_url %>
+</p>
+<input type="submit" name="commit" value="登録" />
+<% end %>
